@@ -1,0 +1,72 @@
+﻿<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="description" content="流域河川工学研究室">
+<meta name="viewport" content="width=device-width">
+<title>流域河川工学研究室 | 富山県立大学 </title>
+<link rel="stylesheet" media="all" href="css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+<script src="js/script.js"></script>
+</head>
+
+<body id="top">
+	<header id="header">
+		<div id="headerWrap">
+			<br /><font size="5">水環境館くさび窓のようす</font>
+
+			<nav id="mainnav">
+				<p id="menuWrap"><a id="menu"><span id="menuBtn"></span></a></p>
+				<div class="panel">
+					<ul>
+						<li><a href="#top">TOP</a></li>
+						<li><a href="https://mizukankyokan.jp/">水環境館HP</a></li>
+					</ul>
+				</div>
+			</nav>
+		</div>
+	</header>
+
+
+	<!-- 動画を埋め込むiframe -->
+	<body background color ="red">
+		<center>
+			<h1>最新のYouTube動画</h1>
+		</center>
+	<!-- 9時45分に更新される動画 -->
+			<center>
+				<iframe id="youtube-video-0945" width="800" height="450" src="https://www.youtube.com/embed/PLACEHOLDER_ID_0945" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</center>
+			<!-- 10時15分に更新される動画 -->
+			<br />
+		    <center>
+				<iframe id="youtube-video-1015" width="800" height="450" src="https://www.youtube.com/embed/PLACEHOLDER_ID_1015" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+			</center>
+			<script>
+				// JavaScriptで動画IDを更新する関数
+				function updateVideo(videoId_0945, videoId_1015) {
+					document.getElementById('youtube-video-0945').src = `https://www.youtube.com/embed/${videoId_0945}`;
+					document.getElementById('youtube-video-1015').src = `https://www.youtube.com/embed/${videoId_1015}`;
+				}
+
+				// 動画ID更新のテスト（実際のプロジェクトではサーバーサイドやAPIからIDを取得する）
+				updateVideo('abcd1234_0945', 'efgh5678_1015');
+			</script>
+</body>
+	<br/><br />
+		 <center>
+		 	本動画は水環境館＠北九州市と，<br />
+			 <a href="https://ecohydroulics-lab.github.io/www_homepage/">富山県立大学流域河川工学研究室</a>，
+		 	<a href="https://www.uc.kyusan-u.ac.jp/teacher/sato/">	九州産業大学水圏環境システムゼミナール</a><br />
+		 	との共同研究の枠組みのもと撮影しております。<br />
+			 無断転載やご利用等はご遠慮ください。
+		 </center>
+
+	<footer id="footer">
+		<br /><br />
+
+		Copyright(c) All Rights Reserved.
+	</footer>
+
+</body>
+</html>
